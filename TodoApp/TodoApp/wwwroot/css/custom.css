@@ -1,0 +1,73 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,100;1,200&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    background-color: rgb(216, 247, 226);
+    width: 30vw;
+    height: 65vh;
+    position: relative;
+    top: 20vh;
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #f8f1f1;
+}
+
+    .form-container > form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: flex-end;
+    }
+
+    .form-container > h3 {
+        position: relative;
+        left: 10vw;
+        top: 1vh;
+    }
+
+    .form-container form input {
+        margin-top: 5vh;
+        width: 29vw;
+        border-radius: 10px;
+        border-color: rgb(15,15, 100 );
+    }
+
+#registerSubmit {
+    background-color: rgb(15,15, 100 );
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#login-submit {
+    background-color: rgb(15,15, 100 );
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

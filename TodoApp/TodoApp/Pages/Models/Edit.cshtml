@@ -1,0 +1,35 @@
+﻿@page
+@model TodoApp.Model.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class ="form-container">
+    <h3>Edit Task</h3>
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Tasks.UserId" />
+                <label asp-for="Tasks.Title" class="control-label"></label>
+                <input asp-for="Tasks.Title" class="form-control" />
+                <span asp-validation-for="Tasks.Title" class="text-danger"></span>
+                <label asp-for="Tasks.Description" class="control-label"></label>
+                <input asp-for="Tasks.Description" class="form-control" />
+                <span asp-validation-for="Tasks.Description" class="text-danger"></span>
+                <label asp-for="Tasks.CreatedAt" class="control-label"></label>
+                <input asp-for="Tasks.CreatedAt" class="form-control" />
+                <span asp-validation-for="Tasks.CreatedAt" class="text-danger"></span>
+                <label asp-for="Tasks.UserName" class="control-label"></label>
+                <input asp-for="Tasks.UserName" class="form-control" />
+                <span asp-validation-for="Tasks.UserName" class="text-danger"></span>
+                <button input type="submit" value="Save" class="btn">Edit</button>
+                  <a asp-page="./Index">Back to List</a>
+        </form>
+  
+<div>
+  
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
