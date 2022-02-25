@@ -70,6 +70,11 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+#create-task{
+    position: relative;
+    margin: 10vh 0 0 35vw
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;

@@ -33,7 +33,7 @@ namespace TodoApp.Model
         {
 
             var userName = _signInManager.GetUserName(User);
-            Tasks = await _context.Tasks.Where(t=>t.UserName== userName ).ToListAsync();
+            Tasks = await _context.Tasks.Where(t => t.UserName == userName ).ToListAsync();
         }
     }
 }

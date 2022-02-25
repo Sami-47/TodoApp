@@ -7,9 +7,7 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -29,6 +27,7 @@
         </tr>
     </thead>
     <tbody>
+     
 @foreach (var item in Model.Tasks) {
         <tr>
             <td>
@@ -61,3 +60,6 @@
 }
     </tbody>
 </table>
+       <p id= "create-task">
+         <a asp-page="Create"><i class="fa fa-plus" aria-hidden="true">Create New</i></a>
+      </p>
